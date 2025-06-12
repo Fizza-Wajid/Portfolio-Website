@@ -2,7 +2,7 @@ name: Linting Workflow
 
 on:
   push:
-    branches: [ "feature/linting-workflow" ]
+    branches: [ "develop", "feature/home-page" ]
   pull_request:
     branches: [ "develop" ]
 
@@ -21,4 +21,3 @@ jobs:
 
       - name: Run Stylelint
         run: npx stylelint "**/*.css"
-
