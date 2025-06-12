@@ -2,13 +2,13 @@ name: Linting Workflow
 
 on:
   push:
-    branches: [ "feature/linting-workflow", "develop" ]
+    branches: [ "feature/linting-workflow", "feature/home-page", "feature/about-page", "develop" ]
   pull_request:
     branches: [ "develop" ]
 
 jobs:
   lint:
-    name: Linting Workflow / lint  # ← this is the key fix
+    name: Linting Workflow / lint
     runs-on: ubuntu-latest
 
     steps:
