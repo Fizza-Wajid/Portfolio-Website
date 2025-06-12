@@ -2,17 +2,18 @@ name: Linting Workflow
 
 on:
   push:
-    branches: [ "feature/linting-workflow", "feature/home-page", "feature/about-page" ]
+    branches: [ "feature/linting-workflow", "feature/home-page", "feature/about-page", "develop" ]
   pull_request:
     branches: [ "develop" ]
 
 jobs:
   lint:
+    name: Linting Workflow / lint
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v3
-      
+
       - name: Install dependencies
         run: npm install
 
