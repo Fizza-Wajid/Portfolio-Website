@@ -3,12 +3,12 @@ name: Linting Workflow
 on:
   push:
     branches: [
-    "feature/linting-workflow",
-    "feature/home-page",
-    "feature/about-page",
-    "feature/projects-page",  # ✅ Add this line
-    "develop"
-  ]
+      "feature/linting-workflow",
+      "feature/home-page",
+      "feature/about-page",
+      "feature/projects-page",
+      "develop"
+    ]
   pull_request:
     branches: [ "develop" ]
 
