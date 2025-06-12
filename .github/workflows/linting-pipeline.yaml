@@ -2,18 +2,18 @@ name: Linting Workflow
 
 on:
   push:
-    branches: [ "develop", "feature/linting-workflow" ]
+    branches: [ "feature/linting-workflow", "develop" ]
   pull_request:
     branches: [ "develop" ]
 
 jobs:
   lint:
-    name: lint
+    name: Linting Workflow / lint  # ← this is the key fix
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v3
-      
+
       - name: Install dependencies
         run: npm install
 
